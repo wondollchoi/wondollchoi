@@ -1,4 +1,4 @@
-# Wonseok Choi (최원석)
+# Wonsok Choi (최원석)
 
 **AI 에이전트 시스템 설계 | 벡터DB 연구 | 풀스택 개발**
 
