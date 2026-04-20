@@ -1,71 +1,89 @@
-# Wonsok Choi (최원석)
+# Hi, I'm Wonsok Choi
 
-**AI 에이전트 시스템 설계 | 벡터DB 연구 | 풀스택 개발**
+**AI Product / Agent Engineer** building **ask-first, trust-aware memory systems** from multimodal data.
 
-숭실대학교 AI융합학부 졸업 (2026.02) · DATOS 연구실 (이은지 교수님 지도)
+I design AI products that learn from user data **without pretending guesses are facts**.
+My work currently sits at the intersection of:
 
----
+- personal memory AI
+- agent workflows and evaluation harnesses
+- knowledge graphs and trust models
+- local-first / on-device-first memory architecture
+- multimodal retrieval and curation
 
-## Research
+## Current work
 
-| | |
-|---|---|
-| 📄 **A Layered Approximate Search Approach over Clustering for Scalable Vector Databases** | Journal of Korean Institute of Intelligent Systems, Vol.36 No.1, 2026 · **제1저자** |
-| 📄 **An Analysis of the Effectiveness of Static Top-k Document Retrieval of Vector Databases in RAG Systems** | 한국컴퓨터종합학술대회 (KCC 2025) · 제3저자 |
+### [memory-weaver](https://github.com/wondollchoi/memory-weaver)
+An **ask-first personal memory AI** that starts with a gallery, learns through conversation, and helps users remember life better.
 
-IVF · HNSW · Product Quantization · RAG 시스템 · FAISS 구현 경험
+- chat-primary, graph-amplified interaction
+- explicit permission over silent automation
+- quiet-by-default product behavior
+- question / confirm / organize loop
+- Skia-based graph home for memory exploration
 
----
+### [gallery-agent-oss](https://github.com/wondollchoi/gallery-agent-oss)
+A **local-first gallery AI curator** that proposes people / events / intent candidates, then stores only what the user confirms.
 
-## Projects
+- trust model: **Observed → Inferred → Confirmed → Authored**
+- observed / inferred extraction pipeline
+- graph store + review queue + question engine
+- graph explorer alpha
 
-### 🔗 [web3-sns](https://github.com/wondollchoi/web3-sns)
-블록체인 기반 NFT 소셜 플랫폼 · 졸업논문 결과물
+### [wondoll-harness](https://github.com/wondollchoi/wondoll-harness)
+A **self-developing AI agent harness** for product work.
 
-- Ethereum Sepolia 실배포 (ERC-1155, ERC-20)
-- PostgreSQL 17개 테이블 · PST 토큰 경제 설계
-- `Next.js 15` `Solidity` `Foundry` `Prisma` `IPFS`
+- Planner → Builder → Evaluator → Trust → Maestro E2E gate
+- JSON-schema based eval manifests
+- behavior-first evaluation flow
+- used as a submodule in memory-weaver
 
-### 🤖 [wonbot](https://github.com/wondollchoi/wonbot)
-자율 운영 AI CEO 에이전트 · 265개 테스트 전체 통과
+### [wonbot](https://github.com/wondollchoi/wonbot)
+An **always-on autonomous multi-agent system** running on a Mac mini.
 
-- CEO-CFO 거버넌스 구조 · 자율 작업 루프
-- ChromaDB 벡터 메모리 · launchd 백그라운드 운영
-- `Python` `Claude API` `ChromaDB` `asyncio`
+- CEO–CFO governance model
+- semantic memory with ChromaDB
+- task orchestration and agent generation
+- Telegram-based operations loop
 
-### 🎮 [another-worldline](https://github.com/wondollchoi/another-worldline)
-Claude API 기반 AI 스토리 RPG · 59개 테스트 통과
+## Design principles
 
-- 멀티 엔딩 스토리 엔진 · 픽셀아트 에셋
-- `Python` `FastAPI` `Claude API`
+- **Ask before you assume**
+- **Evidence before assertion**
+- **Quiet by default**
+- **Explicit permission over silent automation**
+- **Human-in-the-loop for meaningful actions**
 
-### 🧠 [wondollbot](https://github.com/wondollchoi/wondollbot)
-Claude `-p` 기반 멀티에이전트 자율 프레임워크
+## Long-term north star
 
-- Dispatcher · Watcher · 5개 전문 에이전트
-- `Python` `Claude API` `OpenClaw`
+I’m interested in systems that act **less like a digital twin** and more like a **careful curator of a person’s memories**.
 
----
+My long-term question is:
 
-## Tech Stack
+> How do we build a memory system that can help a person — or a family — preserve, search, update, and revisit a life archive across photos, voice, text, video, and documents?
 
-**AI / ML**
-`Claude API` `ChromaDB` `FAISS` `LangChain` `RAG`
+In that direction, I’m exploring how gallery-centered memory AI can evolve into **subject-centered living archives** with stronger provenance, role-aware access, and safer confirmation loops.
 
-**Backend**
-`Python` `FastAPI` `Express.js` `PostgreSQL` `Prisma`
+## Research background
 
-**Frontend**
-`TypeScript` `Next.js 15` `React` `TailwindCSS`
+- vector DB / ANN indexing research
+- RAG retrieval effectiveness analysis
+- multimodal AI experiments
+- system-level interest in memory, retrieval, and explainability
 
-**Blockchain**
-`Solidity` `Foundry` `Wagmi` `IPFS`
+## Selected work
 
-**Infra**
-`Docker` `launchd` `GitHub Actions`
-
----
+- [memory-weaver](https://github.com/wondollchoi/memory-weaver) — commercial alpha
+- [gallery-agent-oss](https://github.com/wondollchoi/gallery-agent-oss) — OSS gallery curator
+- [wondoll-harness](https://github.com/wondollchoi/wondoll-harness) — agent evaluation harness
+- [wonbot](https://github.com/wondollchoi/wonbot) — autonomous agent system
+- [web3-sns](https://github.com/wondollchoi/web3-sns) — graduation thesis project
 
 ## Contact
 
-📧 cws990828@gmail.com
+- Email: `cws990828@gmail.com`
+- GitHub: `github.com/wondollchoi`
+
+---
+
+**Current focus:** building useful AI systems that are explainable, governable, and emotionally meaningful.
