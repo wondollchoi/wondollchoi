@@ -1,50 +1,52 @@
 # Hi, I'm Wonsok Choi
 
-**AI Product / Agent Engineer** building **ask-first, trust-aware memory systems** from multimodal data.
+**AI Product / Agent Engineer.** I ship production software with agentic development
+workflows, and I research **ask-first, trust-aware memory systems** on the side.
 
-I design AI products that learn from user data **without pretending guesses are facts**.
-My work currently sits at the intersection of:
+I build AI products that learn from user data **without pretending guesses are facts**.
 
-- personal memory AI
-- agent workflows and evaluation harnesses
-- knowledge graphs and trust models
-- local-first / on-device-first memory architecture
-- multimodal retrieval and curation
+## Now (2026)
 
-## Current work
+### Jion — Founding Engineer, Backend & AI Product
+Building **Shop Manager**, a multi-channel order management SaaS for Korean e-commerce sellers.
+Live in beta with real sellers since mid-2026.
 
-### [memory-weaver](https://github.com/wondollchoi/memory-weaver)
-An **ask-first personal memory AI** that starts with a gallery, learns through conversation, and helps users remember life better.
+- Sole backend owner: FastAPI service, versioned `/v1` API consumed by a separate web team
+- Channel integrations (Cafe24, Ably, more in progress), carrier shipping API (CJ), auth (Clerk)
+- Order lifecycle: collection → packing → labeling → shipment → claims, with per-channel lifecycle contracts
+- Deploy & ops on a small OCI VM (Terraform, systemd), 360+ commits since 2026-07
 
-- chat-primary, graph-amplified interaction
-- explicit permission over silent automation
-- quiet-by-default product behavior
-- question / confirm / organize loop
-- Skia-based graph home for memory exploration
+### Socra AI — ML Engineer
+<!-- TODO: fill in from Wondoll's notes -->
+_Details coming soon._
 
-### [gallery-agent-oss](https://github.com/wondollchoi/gallery-agent-oss)
-A **local-first gallery AI curator** that proposes people / events / intent candidates, then stores only what the user confirms.
+### wondoritos — side company experiment
+A one-person "AI-run company": Claude agents build, ship and market small apps
+(first app: **copyism**), synced across a dev MacBook and an always-on Mac mini.
+→ [wondoritos.com](https://github.com/wondollchoi/wondoritos.com)
 
-- trust model: **Observed → Inferred → Confirmed → Authored**
-- observed / inferred extraction pipeline
-- graph store + review queue + question engine
-- graph explorer alpha
+## How I work with agents
 
-### [wondoll-harness](https://github.com/wondollchoi/wondoll-harness)
-A **self-developing AI agent harness** for product work.
+Most of the code above is written by AI worker sessions, not by hand.
 
-- Planner → Builder → Evaluator → Trust → Maestro E2E gate
-- JSON-schema based eval manifests
-- behavior-first evaluation flow
-- used as a submodule in memory-weaver
+- **Orchestrator / worker split** — I plan, review and merge; worker sessions write code on branches
+- **PR as the decision gate** — parallel workers, one explicit merge decision
+- **Verify by state, not by output** — deploys and migrations are checked against the real system, not logs
+- **Evidence before assertion** — no feature ships on an assumed API; every channel adapter starts from live captures
 
-### [wonbot](https://github.com/wondollchoi/wonbot)
-An **always-on autonomous multi-agent system** running on a Mac mini.
+Lessons from this feed back into [wondoll-harness](https://github.com/wondollchoi/wondoll-harness).
 
-- CEO–CFO governance model
-- semantic memory with ChromaDB
-- task orchestration and agent generation
-- Telegram-based operations loop
+## Research & side projects
+
+- **memory-weaver** (private, commercial alpha) — an ask-first personal memory AI that starts with a gallery,
+  learns through conversation, and helps users remember life better.
+  Chat-primary, graph-amplified; question / confirm / organize loop.
+- **gallery-agent-oss** (private) — a local-first gallery AI curator that proposes people / events / intent
+  candidates and stores only what the user confirms. Trust model: **Observed → Inferred → Confirmed → Authored**.
+- [wondoll-harness](https://github.com/wondollchoi/wondoll-harness) — self-developing agent harness:
+  Planner → Builder → Evaluator → Trust → E2E gate, JSON-schema eval manifests.
+- [wonbot](https://github.com/wondollchoi/wonbot) — always-on autonomous multi-agent system on a Mac mini:
+  CEO–CFO governance, ChromaDB semantic memory, Telegram ops loop.
 
 ## Design principles
 
@@ -56,34 +58,18 @@ An **always-on autonomous multi-agent system** running on a Mac mini.
 
 ## Long-term north star
 
-I’m interested in systems that act **less like a digital twin** and more like a **careful curator of a person’s memories**.
+I'm interested in systems that act **less like a digital twin** and more like a
+**careful curator of a person's memories**.
 
-My long-term question is:
+> How do we build a memory system that helps a person — or a family — preserve, search,
+> update, and revisit a life archive across photos, voice, text, video, and documents?
 
-> How do we build a memory system that can help a person — or a family — preserve, search, update, and revisit a life archive across photos, voice, text, video, and documents?
+## Background
 
-In that direction, I’m exploring how gallery-centered memory AI can evolve into **subject-centered living archives** with stronger provenance, role-aware access, and safer confirmation loops.
-
-## Research background
-
-- vector DB / ANN indexing research
-- RAG retrieval effectiveness analysis
-- multimodal AI experiments
-- system-level interest in memory, retrieval, and explainability
-
-## Selected work
-
-- [memory-weaver](https://github.com/wondollchoi/memory-weaver) — commercial alpha
-- [gallery-agent-oss](https://github.com/wondollchoi/gallery-agent-oss) — OSS gallery curator
-- [wondoll-harness](https://github.com/wondollchoi/wondoll-harness) — agent evaluation harness
-- [wonbot](https://github.com/wondollchoi/wonbot) — autonomous agent system
-- [web3-sns](https://github.com/wondollchoi/web3-sns) — graduation thesis project
+- Research: vector DB / ANN indexing, RAG retrieval effectiveness, multimodal AI experiments
+- [web3-sns](https://github.com/wondollchoi/web3-sns) — blockchain NFT social platform, graduation thesis (Ethereum Sepolia)
 
 ## Contact
 
 - Email: `cws990828@gmail.com`
 - GitHub: `github.com/wondollchoi`
-
----
-
-**Current focus:** building useful AI systems that are explainable, governable, and emotionally meaningful.
