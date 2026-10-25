@@ -17,8 +17,7 @@ Live in beta with real sellers since mid-2026.
 - Deploy & ops on a small OCI VM (Terraform, systemd), 360+ commits since 2026-07
 
 ### Socra AI — ML Engineer
-<!-- TODO: fill in from Wondoll's notes -->
-_Details coming soon._
+Also working as an ML Engineer at **Socra AI**.
 
 ### wondoritos — side company experiment
 A one-person "AI-run company": Claude agents build, ship and market small apps
